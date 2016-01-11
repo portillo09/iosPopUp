@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+   
+    @IBOutlet weak var empLogo: UIImageView!
+    @IBOutlet weak var empBG: UIImageView!
+    @IBOutlet weak var coolButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +25,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func makePop(sender: AnyObject) {
+        empLogo.hidden = false
+        empBG.hidden = false
+        coolButton.hidden = true
+        
+    }
 
 }
 
